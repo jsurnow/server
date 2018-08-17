@@ -10,7 +10,7 @@ func hello (res http.ResponseWriter, req *http.Request) {
         "Content-Type",
         "application/json",
     )
-    io.WriteString(res, "{hello:world}\n")
+    io.WriteString(res, "{\nhello:world,\nstatus:ok\n}\n")
 }
 
 func main() {
